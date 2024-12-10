@@ -1,0 +1,154 @@
+@media (max-width: 1130px) {
+  .commerce__box,
+  .catalog__box {
+    overflow-x: scroll;
+  }
+
+  .commerce__card,
+  .catalog__card {
+    flex-shrink: 0;
+  }
+  .commerce__box::-webkit-scrollbar .catalog__box::-webkit-scrollbar {
+    height: 5px;
+    background: white;
+  }
+  .commerce__box
+    ::-webkit-scrollbar-thumb
+    .catalog__box
+    ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, blue, white, red);
+    border-radius: 30px;
+  }
+  .footer__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 540px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .footer__list {
+    align-items: center;
+  }
+  .footer__item {
+    justify-content: center;
+  }
+  .nav__list {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: -200px;
+    background-color: #41a28e;
+    padding: 40px;
+    align-items: center;
+    height: 100vh;
+    transition: 0.5s;
+  }
+  .nav__link {
+    color: white;
+  }
+  .menue,
+  .close {
+    display: block;
+  }
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .menue:focus ~ .nav__list {
+    left: 0;
+  }
+  .menue {
+    order: -1;
+  }
+  .nav__input {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .intro {
+    height: 650px;
+  }
+}
+@media (max-width: 900px) {
+  .commerce__box {
+    margin-top: 20px;
+  }
+  .intro {
+    height: 550px;
+  }
+  .intro__title {
+    font-size: 40px;
+    line-height: 100%;
+    padding: 14px 50px;
+  }
+  .intro__link {
+    padding: 15px 30px;
+  }
+  .intro__text {
+    margin: 20px 0;
+  }
+  .catalog__item {
+    height: 300px;
+  }
+  .catalog__card {
+    width: 220px;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 100%;
+    margin: 20px 0;
+  }
+  .text {
+    margin-bottom: 20px;
+  }
+  .jacket {
+    height: 350px;
+    text-align: center;
+  }
+  .jacket__link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .jacket__title {
+    font-size: 40px;
+    line-height: 100%;
+  }
+  .jacket__link {
+    width: 160p;
+    height: 45px;
+  }
+}
+@media (max-width: 800px) {
+  .intro {
+    height: 450px;
+  }
+  .nav {
+    padding: 15px 0;
+  }
+  .nav__logo img {
+    width: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .intro {
+    height: 350px;
+  }
+  .intro__title {
+    font-size: 30px;
+    line-height: 100%;
+    padding: 12px 32px;
+  }
+  .intro__link {
+    padding: 12px 20px;
+  }
+  .title {
+    font-size: 32px;
+    margin: 15px 0;
+  }
+  .text {
+    margin-bottom: 15px;
+  }
+}
